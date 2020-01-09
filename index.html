@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Task</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="login-section">
+		<div class="login">
+			<h1>Sign In</h1>
+			<form action="createpost.html" method="post" name="login" autocomplete="off">
+				<div class="form-group">
+					<label>Useranme</label>
+					<input type="text" name="uname" class="user-name" placeholder="Value" required="required" autocomplete="off">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" name="password" placeholder="Value" required="required" autocomplete="off">
+				</div>
+				<input type="submit" onclick="getUser()" class="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

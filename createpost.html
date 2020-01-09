@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create post</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="nav">
+		<div class="nav-items">
+			<p class="logo">Kudos</p>
+			<ul>
+				<li class="user-name1"></li>
+				<li class="logout"><a href="login.html">Sign Out</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="f-none"></div>
+	<div class="posts">
+		<div class="createpost">
+			<form name="createPost" action="javascript:void(0);">
+				<p class="post-title">Post Kudos</p>
+				<textarea maxlength="200" id="postArea" onkeyup="countCharectors()"></textarea>
+				<span class="count-of-letters"><span class="current-count">0</span> of 200</span>
+				<input type="reset" name="reset" value="Cancel" class="cancel" onclick="countzero()">
+				<input type="submit" name="submit" value="Post" class="post" onclick="createpost()">
+			</form>
+		</div>
+		<div class="posts-list">
+			<h5>Latest Kudos</h5>
+			<ul class="posts-data">
+				
+			</ul>
+		</div>
+	</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
